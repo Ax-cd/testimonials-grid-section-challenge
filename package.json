@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "sass": "^1.50.1"
+  },
+  "name": "testimonials-grid-section",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ax-cd/testimonials-grid-section-challenge.git"
+  },
+  "author": "Ax-cd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ax-cd/testimonials-grid-section-challenge/issues"
+  },
+  "homepage": "https://github.com/Ax-cd/testimonials-grid-section-challenge#readme",
+  "description": ""
+}
