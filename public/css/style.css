@@ -1,3 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(210deg, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+body .hidden {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+}
+body img {
+  border-radius: 50%;
+}
+
+.card {
+  border: 2px solid red;
+  color: hsl(217deg, 19%, 35%);
+  margin: 1rem;
+  border-radius: 10px;
+}
+.card__1 {
+  background-color: hsl(263deg, 55%, 52%);
+}
 
 /*# sourceMappingURL=style.css.map */
