@@ -18,18 +18,39 @@ body {
         top: -100px;
         left: -100px;
     }
-    img {
-        border-radius: 50%;
-    }
 }
 
 .card {
     border: 2px solid red;
-    color: $dark-gray-blue;
-    margin: 1rem;
+    // color: $dark-gray-blue;
+    padding: 1rem 3.5rem 3rem;
+    margin: 0 2rem;
     border-radius: 10px;
+    
+    &__header {
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0;
 
-    &__1 {
-        background-color: $mod-violet;
+        &--img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            margin-right: 2rem;
+        }
+
+        &--title {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__p1 {
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    &__p2 {
+        max-width: 95%;
     }
 }
