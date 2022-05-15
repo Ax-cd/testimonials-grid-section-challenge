@@ -21,16 +21,15 @@ body {
 }
 
 .card {
-    border: 2px solid red;
-    // color: $dark-gray-blue;
-    padding: 1rem 3.5rem 3rem;
-    margin: 0 2rem;
+    border: 2px solid transparent;
+    padding: 1rem 3rem 3rem;
+    margin: 2rem 2.5rem;
     border-radius: 10px;
     
     &__header {
         display: flex;
         align-items: center;
-        margin: 0.5rem 0;
+        margin: 1.5rem 0;
 
         &--img {
             width: 3rem;
@@ -42,15 +41,45 @@ body {
         &--title {
             font-size: 1.5rem;
         }
+
+        &--grad {
+            opacity: 50%;
+        }
     }
 
     &__p1 {
         font-weight: bold;
         font-size: 2rem;
-        margin: 1rem 0;
+        margin: 1.5rem 0;
     }
 
     &__p2 {
         max-width: 95%;
+        opacity: 70%;
     }
+}
+
+#card1 {
+    @include custom($mod-violet, $white);
+    background-image: url('../../public/images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+}
+#img1 {
+    border: 2px solid hsl(263, 76%, 65%);
+}
+
+#card2 {
+    @include custom($dark-gray-blue, $white)
+}
+
+#card4 {
+    @include custom($dark-black-blue, $white)
+}
+#img4 {
+    border: 2px solid hsla(263, 55%, 52%, 0.7);
+}
+
+#card3, #card5 {
+    @include custom($white, $dark-gray-blue);
 }

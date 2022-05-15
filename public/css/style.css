@@ -22,15 +22,15 @@ body .hidden {
 }
 
 .card {
-  border: 2px solid red;
-  padding: 1rem 3.5rem 3rem;
-  margin: 0 2rem;
+  border: 2px solid transparent;
+  padding: 1rem 3rem 3rem;
+  margin: 2rem 2.5rem;
   border-radius: 10px;
 }
 .card__header {
   display: flex;
   align-items: center;
-  margin: 0.5rem 0;
+  margin: 1.5rem 0;
 }
 .card__header--img {
   width: 3rem;
@@ -41,13 +41,48 @@ body .hidden {
 .card__header--title {
   font-size: 1.5rem;
 }
+.card__header--grad {
+  opacity: 50%;
+}
 .card__p1 {
   font-weight: bold;
   font-size: 2rem;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 .card__p2 {
   max-width: 95%;
+  opacity: 70%;
+}
+
+#card1 {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(263deg, 55%, 52%);
+  background-image: url("../../public/images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 10%;
+}
+
+#img1 {
+  border: 2px solid hsl(263deg, 76%, 65%);
+}
+
+#card2 {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(217deg, 19%, 35%);
+}
+
+#card4 {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(219deg, 29%, 14%);
+}
+
+#img4 {
+  border: 2px solid hsla(263deg, 55%, 52%, 0.7);
+}
+
+#card3, #card5 {
+  color: hsl(217deg, 19%, 35%);
+  background-color: hsl(0deg, 0%, 100%);
 }
 
 /*# sourceMappingURL=style.css.map */
